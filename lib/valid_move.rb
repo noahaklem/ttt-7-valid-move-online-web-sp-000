@@ -4,6 +4,8 @@ def valid_move?(board, index)
   invalid = FALSE
   if position_taken?(board, index)
     invalid = FALSE
+  else position_taken?(board,index)
+    invalid = TRUE
   end
 end
 
