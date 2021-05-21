@@ -2,7 +2,10 @@
 def valid_move?(board, index)
   user_input = index
   if user_input.between?(1, 9)
-    position_taken?(board, index)
+    if position_taken?(board, index)
+      TRUE
+    else
+      FALSE
   else
     FALSE
   end
